@@ -1,20 +1,23 @@
 import React from 'react';
+import Stars from './Stars';
+import ReviewList from './ReviewList';
+import ReviewForm from './ReviewForm';
 
 export default class Movie extends React.Component {
     render() {
         return (
-            <div>
+            <div>Movie component
                 <img src='#'></img>
                 <p>Synopsis</p>
-                <div>Rating</div>
+                <div>Rating
+                    <Stars />
+                </div>
                 <br></br>
-                <div>Reviews
-
+                <div>Review List
+                    <ReviewList />
                 </div>
                 <div>Review Form
-                    <form>
-                        
-                    </form>
+                    <ReviewForm />
                 </div>
             </div>
         );
