@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* This is the beginning of my CSS styling for this project. */
+
+#reviewInputLabel {
+  color: #ff0000;
+  background-color: #fffb00;
+}
