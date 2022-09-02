@@ -18,3 +18,60 @@ code {
   color: #ff0000 !important;
   background-color: #fffb00 !important;
 }
+
+.starRatingLabel {
+  color: #ff0000 !important;
+  background-color: #fffb00 !important;
+}
+
+.starRatingInput {
+  color: #ce9a0b !important;
+  background-color: #101d3e !important;
+}
+
+h5 {
+  color: #c32222;
+  background-color: #fffd84;
+}
+
+h4 {
+  color: #ce9a0b;
+  background-color: #101d3e;
+}
+
+h3 {
+  color: #ce9a0b;
+  background-color: #101d3e;
+}
+
+h2 {
+  color: #101d3e;
+  background-color: #ce9a0b;
+}
+
+.synopsis {
+  color: #c32222;
+  background-color: #fffd84;
+}
+
+.movieComponent {
+  padding: 2rem;
+  border-style: dotted;
+  border-color: #fffb00;
+  margin: 1rem;
+}
+
+#root {
+  background: #d4d3d3;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review {
+  color: #ffffff;
+  background-color: #000000;
+}

@@ -10,23 +10,24 @@ export default class Movie extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleSubmit(theReview) {
-        this.props.buttonSubmitAgain(theReview, this.props.movieDetail.id);
+    handleSubmit(theReview, theStarValue) {
+        this.props.buttonSubmitAgain(theReview, theStarValue, this.props.movieDetail.id);
     }
 
     render() {
         return (
-            <div key={this.props.movieDetail.id} className="movieComponent">Movie component
+            <div key={this.props.movieDetail.id} className="movieComponent">
+                <h2>{this.props.movieDetail.title}</h2>
                 <br></br>
-                <img src={this.props.movieDetail.image} width='600'></img>
-                <p><b>Synopsis</b><br></br>
+                <img src={this.props.movieDetail.image} width='600' className="image"></img>
+                <p className="synopsis"><b>Synopsis</b><br></br>
                 <i>{this.props.movieDetail.synopsis}</i></p>
                 <br></br>
-                <div>Review List
-                    <ReviewList reviewArray={this.props.movieDetail.reviewArray}/>
+                <div>
+                    <ReviewList {...{reviewArray: this.props.movieDetail.reviewArray, starArray: this.props.movieDetail.starArray}}/>
                 </div>
                 <br></br>
-                <div>Review Form
+                <div>
                     <ReviewForm {...{reviewArray: this.props.movieDetail.reviewArray, buttonSubmit: this.handleSubmit}}/>
                 </div>
             </div>

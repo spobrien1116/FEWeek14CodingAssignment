@@ -11,14 +11,14 @@ export default class ReviewList extends React.Component {
     render () {
         let myReviews = [];
         let count = 0;
-        for (let movieReview of this.props.reviewArray) {
-            myReviews.push(<Review {...{movieReview, key: count ++}}/>);
+        for (let i = 0; i < this.props.reviewArray.length; i++) {
+            myReviews.push(<Review {...{movieReview: this.props.reviewArray[i], starReview: this.props.starArray[i], key: count ++}}/>);
         }
         
         return (
-            <div className="reviewListComponent">ReviewList component
+            <div className="reviewListComponent">
                 <div>
-                    Movie Reviews
+                    <h3>Movie Reviews</h3>
                     {myReviews}
                 </div>
             </div>

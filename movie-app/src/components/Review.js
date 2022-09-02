@@ -10,8 +10,9 @@ export default class Review extends React.Component {
     render () {
         return (
             <div className="reviewComponent">
-                <p>Review component</p>
-                <p>{this.props.movieReview}</p>
+                <h5>Movie Review</h5>
+                <p className="review">{this.props.movieReview}</p>
+                <h4>Star Rating: {this.props.starReview}</h4>
             </div>
         );
     }
