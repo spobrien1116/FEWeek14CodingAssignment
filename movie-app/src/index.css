@@ -14,7 +14,7 @@ code {
 
 /* This is the beginning of my CSS styling for this project. */
 
-#reviewInputLabel {
-  color: #ff0000;
-  background-color: #fffb00;
+.reviewInputLabel {
+  color: #ff0000 !important;
+  background-color: #fffb00 !important;
 }
